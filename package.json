@@ -1,6 +1,6 @@
 {
-  "homepage": "https://AbdallhMaher.github.io/Fresh-Cart",
   "name": "project1",
+  "homepage": "https://AbdallhMaher.github.io/FreshCart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +23,7 @@
     "react-responsive-pagination": "^2.7.0",
     "react-router": "^6.9.0",
     "react-router-dom": "^6.9.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4",
@@ -43,6 +43,13 @@
       "react-app/jest"
     ]
   },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -54,8 +61,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
   }
 }
