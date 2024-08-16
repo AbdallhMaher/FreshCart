@@ -16,7 +16,7 @@ export default function CategorySlider() {
   }
 async function getCategory(){
  let response = await getAllCategories()
- console.log(response);
+ console.log('done');
  
  if (response?.data.results> 0) {
   setCategory(response?.data.data)
@@ -28,9 +28,9 @@ async function getCategory(){
  }
 }
 useEffect ( ()=>{
-  if(Category=== null){
+  // if(Category=== null){
     getCategory();
-}
+// }
 },[] )
 const settings = {
   dots: false,
