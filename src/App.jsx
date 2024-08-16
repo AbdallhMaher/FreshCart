@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Offline } from "react-detect-offline"
 import { Toaster } from 'react-hot-toast'
 import { RouterProvider } from 'react-router'
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter } from 'react-router-dom'
 import Brands from './components/brands/Brands'
 import Cart from './components/cart/Cart'
 import Categories from './components/categories/Categories'
@@ -39,7 +39,7 @@ function saveUserData(){
  let decodedToken = jwtDecode(encodedToken);
  setUserData(decodedToken);
 }
-let routers = createBrowserRouter([
+let routers = createHashRouter([
   {path:'' ,element:<Layout setUserData={setUserData} userData={userData}/>, children:[
      {index:true ,element:<ProtectedRoute><Home/></ProtectedRoute>},
      {path:'products' ,element:<ProtectedRoute><Products/></ProtectedRoute>},

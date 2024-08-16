@@ -25,7 +25,7 @@ export default function Navbar({userData ,logout}) {
   
 
  return (
-    <nav className={`navbar navbar-dark navbar-expand-sm bg-body-tertiary sticky-top ${isScorlled?'navbar-scrolled':''} `}>
+    <nav className={`navbar navbar-dark navbar-expand-sm  sticky-top ${isScorlled?'navbar-scrolled':''} `}>
   <div className="container-fluid">
     <Link className="navbar-brand" ><img src={logo} className='w-100'></img></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

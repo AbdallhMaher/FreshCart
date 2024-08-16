@@ -1,7 +1,7 @@
 {
   "name": "project1",
-  "homepage": "https://AbdallhMaher.github.io/FreshCart",
-  "version": "0.1.0",
+  "homepage":"https://AbdallhMaher.github.io/FreshCart",
+  "version":"0.1.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",

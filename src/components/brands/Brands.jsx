@@ -41,8 +41,8 @@ export default function Brands() {
      <img className='w-100 pt-2' src={Brands?.image} alt="" />
      <h3 className='text-main fw-bold pt-2'>{Brands?.name}</h3>
      <div className="d-flex justify-content-between pb-2">
-          <span className='lead text-muted fs-5'><i className="fa-regular fa-calendar-days text-warning pe-1"></i>{Brands?.createdAt?.slice(0,10)}</span>
-          <span className='lead text-muted  fs-5'><i className="fa-regular fa-clock text-warning pe-1"></i>{Brands?.createdAt?.slice(11,16)}</span>
+          <span className='lead text-white fs-5'><i className="fa-regular fa-calendar-days text-warning pe-1"></i>{Brands?.createdAt?.slice(0,10)}</span>
+          <span className='lead   text-white fs-5'><i className="fa-regular fa-clock text-warning pe-1"></i>{Brands?.createdAt?.slice(11,16)}</span>
      </div>
   </div>
   <BrandProduct brandId={params?.id}/>

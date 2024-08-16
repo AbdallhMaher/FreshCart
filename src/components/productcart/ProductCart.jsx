@@ -80,7 +80,7 @@ useEffect(() => {
                       </div>
                       
                       <div className='d-flex justify-content-between'>
-                        <span className='text-muted'>{product.price}EGP</span>
+                        <span className=' text-white'>{product.price}EGP</span>
                         <span>
                           <i className="fa-solid fa-star text-warning"></i>
                           {product.ratingsAverage}

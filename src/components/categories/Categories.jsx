@@ -44,8 +44,8 @@ export default function Categories() {
               <img className='w-100 pt-2' height={300} src={Category.image} alt=""/>
               <h3 className='text-main fw-bold pt-2'>{Category.name}</h3>
               <div className="d-flex justify-content-between pb-2">
-              <span className='lead text-muted fs-5'><i className="fa-regular fa-calendar-days text-warning pe-1"></i>{Category?.createdAt?.slice(0,10)}</span>
-              <span className='lead text-muted  fs-5'><i className="fa-regular fa-clock text-warning pe-1"></i>{Category?.createdAt?.slice(11,16)}</span>
+              <span className='lead text-white fs-5'><i className="fa-regular fa-calendar-days text-warning pe-1"></i>{Category?.createdAt?.slice(0,10)}</span>
+              <span className='lead text-white  fs-5'><i className="fa-regular fa-clock text-warning pe-1"></i>{Category?.createdAt?.slice(11,16)}</span>
               </div>
           </div>
           <CategoryProduct categoryId={params.id}/>
