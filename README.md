@@ -1,3 +1,8 @@
+# Fresh Cart
+freshCart is a modern e-commerce application built with React, offering a seamless and intuitive shopping experience. With a focus on user experience and performance, freshCart provides all the essential features to manage your online shopping needs effectively.
+## Features
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
