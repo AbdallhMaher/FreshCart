@@ -67,6 +67,7 @@ body {
 }
 .heart{
   color: #FF0000;
+
 }
 .bg-heart{
   background-color: #FF0000;
@@ -80,6 +81,7 @@ body {
 .swiper {
   width: 100%;
   height: 100%;
+  
 }
 
 .swiper-slide {

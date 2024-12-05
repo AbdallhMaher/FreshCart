@@ -37,6 +37,7 @@ async function checkCart(){
 }
 useEffect(() => {
   checkCart();
+  
 }, [numOfItem,cartId])
 
 async function checkWhishlist() {
@@ -99,7 +100,7 @@ function getLoggedUserCart() {
   }
   function onlinePayment(cartId,shippingAddress) {
   
-   return  axios.post(`${baseurl}/api/v1/orders/checkout-session/${cartId}?url=http://localhost:3000`,
+   return  axios.post(`${baseurl}/api/v1/orders/checkout-session/${cartId}?url=https://abdallhmaher.github.io/FreshCart%23#`,
       {
          shippingAddress : shippingAddress,
       },
@@ -110,7 +111,7 @@ function getLoggedUserCart() {
   }
   function cashPayment(cartId,shippingAddress) {
   
-   return  axios.post(`${baseurl}/api/v1/orders/checkout-session/${cartId}`,
+   return  axios.post(`${baseurl}/api/v1/orders/${cartId}`,
       {
          shippingAddress : shippingAddress,
       },

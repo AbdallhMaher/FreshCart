@@ -31,7 +31,9 @@ export default function App() {
  }
  }, [])
  
-  
+//  if (window.location.pathname === '/allorders') {
+//   window.location.replace('/#/allorders');
+// }
 const [userData, setUserData] = useState(null);
 
 function saveUserData(){

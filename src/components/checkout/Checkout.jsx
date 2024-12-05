@@ -21,9 +21,11 @@ export default function Checkout() {
     let response = await onlinePayment(cartId,values);
     if(response?.data?.status === 'success')
     {
-      console.log(response);
+    
       toast.success("Successfuly Order")
       window.location.href = response.data.session.url;
+    
+      
     }
     else{
       (response?.response?.data.message === 'Expired Token. please login again' ||response?.response?.data.message === 'You are not logged in. Please login to get access' )?getOut() : toast.error('Failed Order');

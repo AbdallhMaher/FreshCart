@@ -80,6 +80,7 @@ function getOut() {
                       <div className="col-md-6 h6">
                       <h4>Order Details: </h4>
                       {order?.user?.name}  <br/>
+                      {order?.shippingAddress?.details}  <br/>
                       {order?.shippingAddress?.phone}  <br/>
                       {order?.shippingAddress?.city}  
                       </div>

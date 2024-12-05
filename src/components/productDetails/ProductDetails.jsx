@@ -105,15 +105,14 @@ var settings = {
 
     <div className='col-md-8 pt-1'>
     <div className='d-flex justify-content-between align-items-center'>
-    <h3 className='fw-bolder'>{productDetails?.title}</h3>
+    <h3 className='fw-bolder'>{productDetails?.title.split(' ').slice(0, 2).join(' ')}</h3>
     <i className="fa-solid fa-heart fa-lg" style={{color:isFavorite?'#ff0000':'#BDBDBD'}}  onClick={()=>{isFavorite ?deleteFromWishlist(productDetails._id): addToWishlist(productDetails._id) }}></i>
     </div>
-      <p className='p-2 text-muted'>{productDetails?.description}</p>
+      <p className='p-2'>{productDetails?.description}</p>
      <div className='d-flex justify-content-between'>
-     <span className='text-muted'>{productDetails?.price}EGP</span>
-     <span>
-     <i className="fa-solid fa-star text-warning">  </i>
-     {productDetails?.ratingsAverage}
+     <span className='text-white'>{productDetails?.price} EGP</span>
+     <span>{productDetails?.ratingsAverage} <i className="fa-solid fa-star text-warning"></i> 
+     
      </span>
      </div>
      <button className='btn bg-main w-100 text-white' onClick={()=>addProduct(productDetails._id)}>+ Add</button>

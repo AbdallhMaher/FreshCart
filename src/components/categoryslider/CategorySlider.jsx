@@ -18,7 +18,7 @@ async function getCategory(){
  let response = await getAllCategories()
  console.log('done');
  
- if (response?.data.results> 0) {
+ if (response?.data?.results> 0) {
   setCategory(response?.data.data)
  }
  else{
